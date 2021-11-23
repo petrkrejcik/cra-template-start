@@ -3,11 +3,11 @@
 ## Install
 
 ```
-yarn create react-app new-app-name --template @snc/emi
+yarn create react-app new-app-name --template start
 ```
 
 If it complains about packages which it can't find try `npx`:
 
 ```
-npx create-react-app new-app-name --template @snc/emi
+npx create-react-app new-app-name --template start
 ```
