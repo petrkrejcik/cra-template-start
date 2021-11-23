@@ -1,0 +1,59 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "**/*"
+  ],
+  "plugins": [
+    "import"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js",
+        "*.jsx"
+      ],
+      "extends": "react-app",
+      "rules": {
+        "import/order": [
+          "warn",
+          {
+            "alphabetize": {
+              "order": "asc",
+              "caseInsensitive": true
+            },
+            "groups": [
+              "builtin",
+              "external",
+              "internal",
+              "parent",
+              "sibling",
+              "index"
+            ],
+            "pathGroups": [
+              {
+                "pattern": "react",
+                "group": "external",
+                "position": "before"
+              }
+            ],
+            "pathGroupsExcludedImportTypes": [
+              "react"
+            ],
+            "newlines-between": "never"
+          }
+        ],
+        "no-unused-vars": [
+          "warn",
+          {
+            "vars": "all",
+            "args": "after-used",
+            "ignoreRestSiblings": true
+          }
+        ],
+        "no-var-requires": "off"
+      }
+    }
+  ]
+}

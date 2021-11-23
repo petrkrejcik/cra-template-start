@@ -1,0 +1,4 @@
+dist/
+build/
+src/serviceWorker.js
+src/reportWebVitals.js
