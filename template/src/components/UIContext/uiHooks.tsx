@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { UIContext } from './UIContext';
 
 export const useUI = () => {
