@@ -1,4 +1,4 @@
-# EMI Suite Product CRA template
+# CRA template
 
 ## Install
 
